@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Media Km</string>
+    <string name="kmAnterior">Km Anterior: </string>
+    <string name="kmAtual">Km Atual: </string>
+    <string name="qtdeAbastecida">Qtde Abastecida</string>
+    <string name="unidade">km / l</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnLimpar">Limpar</string>
+
+</resources>
