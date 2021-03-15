@@ -29,20 +29,20 @@ class MainActivity : AppCompatActivity() {
         var kmAtual = binding.etKmAtual.text.toString().toDouble()
         var qtdeAbastecida = binding.etQtdeAbastecida.text.toString().toDouble()
 
-        var media = (kmAtual - kmAnterior) / (50 - qtdeAbastecida)
+        var media = (kmAtual - kmAnterior) / (50.0 - qtdeAbastecida)
 
-        val formatter = DecimalFormat("0#.0")
+        val formatter = DecimalFormat("#0.0")
+
         binding.tvResultadoKm.text = formatter.format(media)
 
     }
 
     private fun restart() {
 
-        binding.tvResultadoKm.setText("00.0")
         binding.etKmAtual.setText("")
         binding.etkmAnterior.setText("")
         binding.etQtdeAbastecida.setText("")
-
+        binding.tvResultadoKm.setText("00.0")
 
     }
 
